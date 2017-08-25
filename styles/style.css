@@ -1,0 +1,143 @@
+body {
+	font-family: sans-serif;
+	background-color: #37373e;
+	min-height: 100vh;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row; 
+}
+
+.items {
+	margin: 0 10px;
+}
+
+.btn {
+	color: white;
+	position: relative;
+ 	display: inline-block;
+ 	padding: 10px 20px;
+ 	border-radius: 2px;
+  	border: 1px solid white;
+    background-image: -webkit-linear-gradient(white, white);
+    background-image: -o-linear-gradient(white, white);
+    background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    transition: all .5s ease;
+}
+
+.btn:hover {
+	color: #37373e;
+}
+
+/* BTN_01 SLIDE */
+.btn_01 {
+	color: white;
+	border: 1px solid white;
+	padding: 10px 20px;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	transition: all 0.5s ease-in-out;
+	z-index: 1;
+	border-radius: 2px;
+}
+
+.btn_01:before { 
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	transform: translateX(-100%);
+	box-sizing: border-box;
+	transition: all 0.5s ease-in-out;
+	z-index: -1;
+}
+			
+.btn_01:hover {
+	border: 1px solid white;
+	transition: all 500ms ease-in-out;
+	color: #37373e;
+	cursor: pointer;
+}
+			
+.btn_01:hover::before {
+	box-sizing: border-box;
+	transition: all 0.5s ease-in-out;
+	transform: translateX(0);
+	z-index: -1;
+}
+
+/* BTN_02 SUNRISE */
+
+.btn_02 {
+	color: white;
+	border: 1px solid white;
+	padding: 10px 20px;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	transition: all 750ms ease-in-out;
+	z-index: 1;
+	border-radius: 2px;
+}
+
+.btn_02:before { 
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	transform: scale(0);
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	transition: all 750ms ease;
+	z-index: -1;
+}
+			
+.btn_02:hover {
+	border: 1px solid white;
+	transition: all 750ms ease;
+	color: #37373e;
+	cursor: pointer;
+}
+			
+.btn_02:hover::before {
+	box-sizing: border-box;
+	transition: all 750ms ease;
+	transform: scale(2);
+	z-index: -1;
+}
+
+/* BTN_03 BALL */
+
+.btn_03 {
+	background-position: 50% 50%;
+}
+
+.btn_03 {
+	background-size: 0% 0%;
+}
+
+.btn_03:hover {
+    background-size: 110% 110%;
+}
+
+/* BTN_04 SUNRISEv2 */
+
+.btn_04 {
+	background-position: 50% 100%;
+	background-size: 0% 0%;
+}
+
+.btn_04:hover {
+	background-size: 110% 110%;
+}
