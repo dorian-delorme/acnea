@@ -21,15 +21,15 @@ body {
 }
 
 .btn {
-	color: white;
+	color: #edecf2;
 	position: relative;
  	display: inline-block;
  	padding: 10px 20px;
  	border-radius: 2px;
-  	border: 1px solid white;
-    background-image: -webkit-linear-gradient(white, white);
-    background-image: -o-linear-gradient(white, white);
-    background-image: linear-gradient(white, white);
+  	border: 1px solid #edecf2;
+    background-image: -webkit-linear-gradient(#edecf2, #edecf2);
+    background-image: -o-linear-gradient(#edecf2, #edecf2);
+    background-image: linear-gradient(#edecf2, #edecf2);
     background-repeat: no-repeat;
     transition: all .5s ease;
 }
@@ -46,7 +46,7 @@ body {
 }
 
 a {
-	color: white;
+	color: #edecf2;
 	transition: all .5s ease;
 	text-decoration: none;
 }
@@ -64,8 +64,8 @@ a:hover {
 /* BTN_02 SUNRISE */
 
 .btn_02 {
-	color: white;
-	border: 1px solid white;
+	color: #edecf2;
+	border: 1px solid #edecf2;
 	padding: 10px 20px;
 	position: relative;
 	display: inline-block;
@@ -82,10 +82,10 @@ a:hover {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: white;
+	background-color: #edecf2;
 	transform: scale(0);
 	border-radius: 50%;
-	width: 100px;
+	width: 100%;
 	height: 100px;
 	box-sizing: border-box;
 	transition: all 750ms ease;
@@ -93,7 +93,7 @@ a:hover {
 }
 			
 .btn_02:hover {
-	border: 1px solid white;
+	border: 1px solid #edecf2;
 	transition: all 750ms ease;
 	color: #37373e;
 	cursor: pointer;
