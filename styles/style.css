@@ -6,11 +6,11 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-direction: row; 
+	flex-direction: column; 
 }
 
 .items {
-	margin: 0 10px;
+	margin: 10px;
 }
 
 .btn {
@@ -29,47 +29,15 @@ body {
 
 .btn:hover {
 	color: #37373e;
+	background-size: 110% 110%;
+	cursor: pointer;
 }
 
 /* BTN_01 SLIDE */
-.btn_01 {
-	color: white;
-	border: 1px solid white;
-	padding: 10px 20px;
-	position: relative;
-	display: block;
-	overflow: hidden;
-	transition: all 0.5s ease-in-out;
-	z-index: 1;
-	border-radius: 2px;
-}
 
-.btn_01:before { 
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-color: white;
-	transform: translateX(-100%);
-	box-sizing: border-box;
-	transition: all 0.5s ease-in-out;
-	z-index: -1;
-}
-			
-.btn_01:hover {
-	border: 1px solid white;
-	transition: all 500ms ease-in-out;
-	color: #37373e;
-	cursor: pointer;
-}
-			
-.btn_01:hover::before {
-	box-sizing: border-box;
-	transition: all 0.5s ease-in-out;
-	transform: translateX(0);
-	z-index: -1;
+.btn_01 {
+	background-position: 0% 0%;
+	background-size: 0% 100%; 
 }
 
 /* BTN_02 SUNRISE */
@@ -79,7 +47,7 @@ body {
 	border: 1px solid white;
 	padding: 10px 20px;
 	position: relative;
-	display: block;
+	display: inline-block;
 	overflow: hidden;
 	transition: all 750ms ease-in-out;
 	z-index: 1;
@@ -121,14 +89,7 @@ body {
 
 .btn_03 {
 	background-position: 50% 50%;
-}
-
-.btn_03 {
 	background-size: 0% 0%;
-}
-
-.btn_03:hover {
-    background-size: 110% 110%;
 }
 
 /* BTN_04 SUNRISEv2 */
@@ -138,6 +99,16 @@ body {
 	background-size: 0% 0%;
 }
 
-.btn_04:hover {
-	background-size: 110% 110%;
+/* BTN_05 */
+
+.btn_05 {
+	background-position: 50% 100%;
+	background-size: 100% 0%;
+}
+
+/* BTN_06 */
+
+.btn_06 {
+	background-position: 50% 50%;
+	background-size: 0% 100%;	
 }
